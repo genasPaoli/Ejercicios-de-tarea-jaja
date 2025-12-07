@@ -21,6 +21,7 @@ console.log (laOracion)
 
 printOutString();
 
+export
 
 /*
 ¿Qué hace el método join()?
