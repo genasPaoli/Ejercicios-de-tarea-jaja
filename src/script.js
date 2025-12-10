@@ -3,7 +3,7 @@
 import { ejercicioUno } from "./modules/1stexc.js"
 import { ejercicioDos } from "./modules/2ndexc.js";
 import { ejercicioTres } from "./modules/3rdexc.js";
-import { ejercicioCuatro } from "./modules/4thexc.js"
+import { ejercicioCuatro } from "./modules/4thexc.js";
 
 
 const resultadoDiv = document.getElementById('resultado')
@@ -34,5 +34,11 @@ document.getElementById('scndBttn').addEventListener('click', () => {
 document.getElementById('thrdBttn').addEventListener('click', () => {
     const datos = ejercicioTres();
     console.log('Resultado ejercicio 3:', datos.resultado);
+    mostrarResultado(datos);
+});
+
+document.getElementById('frthBttn').addEventListener('click', () => {
+    const datos = ejercicioCuatro();
+    console.log('Resultado ejercicio 4:', datos.resultado);
     mostrarResultado(datos);
 });
