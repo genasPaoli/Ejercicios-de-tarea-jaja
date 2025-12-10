@@ -2,26 +2,36 @@
 Exercise #1 (sugerencia: join())
 Copy the code below into your workspace:
 */
+ const arr = ["This", "is", "a", "sentence."];
 
-let arr = ["This", "is", "a", "sentence."];
+export function ejercicioUno() {
+  // Primero se crea la funcion a partir del array 
+  function printOutString() {
 
-// Primero se crea la funcion a partir del array 
-function printOutString() {
+    // dentro de la funcion se declara una variable que contenga el array con la funcion 
+    // .join () que lo que hace es concatenar los strings del array separado por lo que 
+    // indique el metodo join dentro de sus comiilas 
 
-// dentro de la funcion se declara una variable que contenga el array con la funcion 
-// .join () que lo que hace es concatenar los strings del array separado por lo que 
-// indique el metodo join dentro de sus comiilas 
+    const laOracion = arr.join(" ");
 
-  const laOracion = arr.join(" ");
+    console.log(laOracion)
 
-console.log (laOracion)
+  }
+
+
+  printOutString();
+
+  const laOracion = arr.join (" ")
+
+  return {
+        titulo: "Ejercicio 1: Join",
+        descripcion: "Convertir array de palabras en una oración",
+        arrayOriginal: arr,
+        resultado: [laOracion],
+        explicacion: "join(' ') une todos los elementos con un espacio entre ellos"
+    };
 
 }
-
-
-printOutString();
-
-export
 
 /*
 ¿Qué hace el método join()?
